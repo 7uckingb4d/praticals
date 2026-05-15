@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+ body {
+ margin: 0;
+ font-family: Arial;
+ }
+ header {
+ display: flex;
+ justify-content: space-between;
+ background: #333;
+ color: white;
+ padding: 15px;
+ }
+ .hero {
+ text-align: center;
+ padding: 50px;
+ background: lightblue;
+ }
+ .features {
+ display: flex;
+ justify-content: space-around;
+ padding: 20px;
+ }
+ .box {
+ width: 30%;
+ background: #eee;
+ padding: 20px;
+ }
+ footer {
+ text-align: center;
+ background: #333;
+ color: white;
+ padding: 10px;
+ }
+ @media (max-width: 768px) {
+ .features {
+ flex-direction: column;
+ }
+ .box {
+ width: 100%;
+ margin-bottom: 10px;
+ }
+ }
+ </style>
+</head>
+<body>
+<header>
+ <h2>MySite</h2>
+ <nav>Home | About | Contact</nav>
+</header>
+<section class="hero">
+ <h1>Welcome</h1>
+ <button>Get Started</button>
+</section>
+<section class="features">
+ <div class="box">Feature 1</div>
+ <div class="box">Feature 2</div>
+ <div class="box">Feature 3</div>
+</section>
+<footer>
+ <p>© 2026</p>
+</footer>
+</body>
+</html>

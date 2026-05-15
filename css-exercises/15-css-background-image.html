@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>CSS Background Image</title>
+ <style>
+ body {
+ font-family: Arial;
+ }
+ .repeat-xy {
+ background-image: url('https://via.placeholder.com/50');
+ background-repeat: repeat;
+ height: 200px;
+ padding: 20px;
+ margin: 10px;
+ }
+ .repeat-x {
+ background-image: url('https://via.placeholder.com/50');
+ background-repeat: repeat-x;
+ height: 200px;
+ padding: 20px;
+ margin: 10px;
+ }
+ .repeat-y {
+ background-image: url('https://via.placeholder.com/50');
+ background-repeat: repeat-y;
+ height: 200px;
+ padding: 20px;
+ margin: 10px;
+ }
+ .no-repeat {
+ background-image: url('https://via.placeholder.com/200');
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 300px;
+ padding: 20px;
+ margin: 10px;
+ }
+ </style>
+</head>
+<body>
+ <h1>CSS Background Image Examples</h1>
+ <div class="repeat-xy">
+  <h3>Background Repeat XY (Default)</h3>
+ </div>
+ <div class="repeat-x">
+  <h3>Background Repeat-X (Horizontal)</h3>
+ </div>
+ <div class="repeat-y">
+  <h3>Background Repeat-Y (Vertical)</h3>
+ </div>
+ <div class="no-repeat">
+  <h3>No Repeat with Center Position</h3>
+ </div>
+</body>
+</html>

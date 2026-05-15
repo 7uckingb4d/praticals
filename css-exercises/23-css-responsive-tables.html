@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Responsive Tables</title>
+ <style>
+ body {
+ background-color: #f0f8ff;
+ font-family: Arial;
+ padding: 20px;
+ }
+ table {
+ border-collapse: collapse;
+ width: 100%;
+ margin: 20px 0;
+ }
+ th, td {
+ padding: 12px;
+ border: 1px solid #ddd;
+ text-align: left;
+ }
+ th {
+ background-color: #333;
+ color: white;
+ }
+ tr:nth-child(even) {
+ background-color: #f2f2f2;
+ }
+ tr:hover {
+ background-color: #e6e6e6;
+ }
+ @media (max-width: 600px) {
+ table, thead, tbody, th, td, tr {
+ display: block;
+ }
+ tr {
+ margin-bottom: 15px;
+ border: 1px solid #ddd;
+ }
+ th {
+ background-color: #333;
+ color: white;
+ position: absolute;
+ top: -9999px;
+ left: -9999px;
+ }
+ td {
+ padding-left: 50%;
+ position: relative;
+ }
+ td:before {
+ content: attr(data-label);
+ position: absolute;
+ left: 6px;
+ font-weight: bold;
+ }
+ }
+ </style>
+</head>
+<body>
+ <h1>Responsive Table Example</h1>
+ <table>
+  <tr>
+   <th>Name</th>
+   <th>Age</th>
+   <th>City</th>
+   <th>Country</th>
+  </tr>
+  <tr>
+   <td data-label="Name">John Doe</td>
+   <td data-label="Age">25</td>
+   <td data-label="City">New York</td>
+   <td data-label="Country">USA</td>
+  </tr>
+  <tr>
+   <td data-label="Name">Jane Smith</td>
+   <td data-label="Age">30</td>
+   <td data-label="City">Los Angeles</td>
+   <td data-label="Country">USA</td>
+  </tr>
+  <tr>
+   <td data-label="Name">Bob Johnson</td>
+   <td data-label="Age">35</td>
+   <td data-label="City">Chicago</td>
+   <td data-label="Country">USA</td>
+  </tr>
+ </table>
+</body>
+</html>

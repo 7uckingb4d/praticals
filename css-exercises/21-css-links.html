@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>CSS Links</title>
+ <style>
+ body {
+ background-color: #f0f8ff;
+ font-family: Arial;
+ padding: 20px;
+ }
+ a:link {
+ color: blue;
+ text-decoration: none;
+ }
+ a:visited {
+ color: purple;
+ }
+ a:hover {
+ color: red;
+ text-decoration: underline;
+ background-color: yellow;
+ }
+ a:active {
+ color: green;
+ background-color: lightgreen;
+ }
+ .link-examples {
+ margin: 20px;
+ line-height: 2;
+ }
+ </style>
+</head>
+<body>
+ <h1>CSS Link States</h1>
+ <div class="link-examples">
+  <p><strong>:link</strong> - An unvisited link (blue)</p>
+  <a href="https://www.google.com" target="_blank">Visit Google (unvisited)</a>
+  <br>
+  <p><strong>:visited</strong> - A visited link (purple)</p>
+  <p><strong>:hover</strong> - A link when you mouse over it (red with yellow background)</p>
+  <a href="https://www.github.com" target="_blank">Visit GitHub</a>
+  <br>
+  <p><strong>:active</strong> - A link the moment it is clicked (green with light green background)</p>
+ </div>
+</body>
+</html>

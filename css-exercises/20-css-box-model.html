@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>CSS Box Model</title>
+ <style>
+ body {
+ background-color: #f0f8ff;
+ font-family: Arial;
+ }
+ .box {
+ background-color: lightblue;
+ border: 5px solid blue;
+ padding: 20px;
+ margin: 30px;
+ width: 300px;
+ }
+ .box-explanation {
+ margin: 20px;
+ padding: 20px;
+ background-color: lightyellow;
+ border: 1px solid orange;
+ }
+ </style>
+</head>
+<body>
+ <h1>CSS Box Model</h1>
+ <div class="box">
+  <h3>The Box Model</h3>
+  <p>This div demonstrates the CSS Box Model:</p>
+  <ul>
+   <li><strong>Content:</strong> The actual content (text, images, etc.)</li>
+   <li><strong>Padding:</strong> Space inside the border (20px)</li>
+   <li><strong>Border:</strong> The border around padding (5px)</li>
+   <li><strong>Margin:</strong> Space outside the border (30px)</li>
+  </ul>
+ </div>
+ <div class="box-explanation">
+  <p>Total width = Content width + Padding + Border + Margin</p>
+ </div>
+</body>
+</html>

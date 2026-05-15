@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>CSS Classes</title>
+ <style>
+ body {
+ background-color: #f0f8ff;
+ font-family: Arial;
+ }
+ .box {
+ padding: 15px;
+ margin: 10px;
+ border: 2px solid #333;
+ }
+ .primary {
+ background-color: blue;
+ color: white;
+ }
+ .secondary {
+ background-color: green;
+ color: white;
+ }
+ .warning {
+ background-color: orange;
+ color: black;
+ }
+ .large {
+ font-size: 20px;
+ font-weight: bold;
+ }
+ .small {
+ font-size: 12px;
+ }
+ .box.primary.large {
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+ }
+ </style>
+</head>
+<body>
+ <h1>CSS Classes - Single and Multiple</h1>
+ <div class="box primary">Single Class: Primary</div>
+ <div class="box secondary">Single Class: Secondary</div>
+ <div class="box warning">Single Class: Warning</div>
+ <div class="box primary large">Multiple Classes: Primary + Large</div>
+ <div class="box secondary small">Multiple Classes: Secondary + Small</div>
+ <div class="box primary large">Multiple Classes: Primary + Large (with shadow)</div>
+</body>
+</html>
