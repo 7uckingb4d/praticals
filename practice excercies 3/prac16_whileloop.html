@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>While Loop Output</h2>
+
+        <div id="result" class="output"></div>
+
+        <button onclick="runLoop()">Run Loop</button>
+    </div>
+
+    <script>
+        function runLoop() {
+            let ctr = 0;
+            let output = "";
+
+            while (ctr <= 10) {
+                ctr++;
+                output += "The output is: " + ctr + "<br>";
+            }
+
+            document.getElementById("result").innerHTML = output;
+
+        }
+    </script>
+</body>
+
+</html>

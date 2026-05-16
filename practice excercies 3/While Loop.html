@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Login</title>
+</head>
+<body>
+
+  <h1>Login Status</h1>
+  <p id="result"></p>
+
+  <script>
+    let correctPassword = "admin123";
+    let input = "";
+    let attempts = 0;
+    let maxAttempts = 3;
+
+    while (input !== correctPassword && attempts < maxAttempts) {
+      input = prompt("Enter password:");
+      attempts++;
+    }
+
+    if (input === correctPassword) {
+      document.getElementById("result").innerHTML = "Access Granted";
+    } else {
+      document.getElementById("result").innerHTML = "Access Denied";
+    }
+  </script>
+
+</body>
+</html>

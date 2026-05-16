@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day of the Week</title>
+</head>
+<body>
+
+  <h1 id="output"></h1>
+
+  <script>
+    let day = parseInt(prompt("Enter a number from 1 to 7:"), 10);
+    let result;
+
+    switch (day) {
+      case 1:
+        result = "Monday";
+        break;
+      case 2:
+        result = "Tuesday";
+        break;
+      case 3:
+        result = "Wednesday";
+        break;
+      case 4:
+        result = "Thursday";
+        break;
+      case 5:
+        result = "Friday";
+        break;
+      case 6:
+        result = "Saturday";
+        break;
+      case 7:
+        result = "Sunday";
+        break;
+      default:
+        result = "Invalid day number";
+    }
+
+    document.getElementById("output").innerHTML = result;
+  </script>
+
+</body>
+</html>

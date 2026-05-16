@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password</title>
+</head>
+<body>
+
+  <h1 id="output"></h1>
+
+  <script>
+    let password = prompt("Enter the password:");
+    
+    if (password === "admin123") {
+      document.getElementById("output").innerHTML = "Access Granted!";
+    } else {
+      document.getElementById("output").innerHTML = "Access Denied.";
+    }
+  </script>
+
+</body>
+</html>
